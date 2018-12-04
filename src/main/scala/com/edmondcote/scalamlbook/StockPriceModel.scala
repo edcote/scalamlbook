@@ -5,11 +5,18 @@ import Types._
 import Financials._
 
 
+/**
+  * The StockPriceModel object contains main function.
+  */
 object StockPriceModel extends Enumeration {
-  def load(resourceName: String): Unit = {
+  def load(resourceName: String): XVSeries[Double] = {
     val src = Source.fromResource(resourceName)
-    val data = extract(src.getLines().map(_.split(",")).drop(1))
+    val lines = src.getLines()
+    val fields: Iterator[Fields] = lines.map(_.split(","))
+    val cols = fields.drop(1)
+    val data = extract(cols)
     src.close()
+    data
   }
 
   def extract(cols: Iterator[Fields]): XVSeries[Double] = {
@@ -22,6 +29,7 @@ object StockPriceModel extends Enumeration {
   }
 
   def main(args: Array[String]): Unit = {
-    load("CSCO.csv")
+    val data = load("CSCO.csv")
+    data.take(10).foreach(x => println(x.mkString(", ")))
   }
 }
