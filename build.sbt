@@ -1,4 +1,4 @@
-name := "stockpricemodel"
+name := "scalamlbook"
 
 version := "0.1"
 

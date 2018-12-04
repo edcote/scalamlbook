@@ -1,4 +1,4 @@
-package com.edmondcote.stockpricemodel
+package com.edmondcote.scalamlbook
 
 import scala.io.Source
 import Types._
@@ -22,8 +22,6 @@ object StockPriceModel extends Enumeration {
   }
 
   def main(args: Array[String]): Unit = {
-    println("Hello, World!")
     load("CSCO.csv")
-
   }
 }

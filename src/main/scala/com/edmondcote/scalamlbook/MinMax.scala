@@ -1,4 +1,4 @@
-package com.edmondcote.stockpricemodel
+package com.edmondcote.scalamlbook
 
 import Types._
 

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stockpricemodel.iml" filepath="$PROJECT_DIR$/.idea/modules/stockpricemodel.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stockpricemodel-build.iml" filepath="$PROJECT_DIR$/.idea/modules/stockpricemodel-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalamlbook.iml" filepath="$PROJECT_DIR$/.idea/modules/scalamlbook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalamlbook-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalamlbook-build.iml" />
     </modules>
   </component>
 </project>
