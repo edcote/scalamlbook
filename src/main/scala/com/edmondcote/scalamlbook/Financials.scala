@@ -3,6 +3,9 @@ package com.edmondcote.scalamlbook
 import Types._
 
 
+/**
+  * The Financials object models the end-of-day stock price.
+  */
 object Financials extends Enumeration {
   type Financials = Value
 
