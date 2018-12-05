@@ -38,4 +38,5 @@ class MinMax[T <: AnyVal](values: XSeries[T])(implicit f: T => Double) {
   def setScaleFactors(low: Double, high: Double): Option[ScaleFactors] = {
     Some(ScaleFactors(low, high, (high - low) / (max - min)))
   }
+
 }

@@ -15,4 +15,3 @@ object Financials extends Enumeration {
 
   def toDoubleArray(vs: Array[Value]): Fields => Array[Double] = (s: Fields) => vs.map(v => s(v.id).toDouble)
 }
-
