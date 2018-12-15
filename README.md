@@ -1,4 +1,4 @@
-# Scala for Machine Learning book exercises
+# Scala for Machine Learning -- Learn by Doing
 
 Nothing much to see here. This repository contains my work (learn by doing) for Patrick Nicolas' book Scala for Machine Learning.
 
